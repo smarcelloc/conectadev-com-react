@@ -1,5 +1,6 @@
 {
   "name": "conectadev-com-react",
+  "description": "Rede social para desenvolvedores de software",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
