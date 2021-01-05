@@ -2,6 +2,7 @@ import Header from '../../components/Header';
 import { makeStyles } from "@material-ui/styles";
 import Navbar from '../../components/Navbar';
 import Feed from '../../components/Feed';
+import { Box, Container } from '@material-ui/core';
 
 
 const useStyle = makeStyles((theme) => ({
@@ -12,10 +13,8 @@ const useStyle = makeStyles((theme) => ({
   },
 
   main: {
-    height: '100vh',
-    display: 'flex',
-    width: '1200px',
-    margin: '0 auto'
+    marginTop: 64,
+    padding: 24
   }
 
 }));
@@ -29,10 +28,12 @@ function Home() {
   return (
     <div className={classes.root}>
       <Header />
-      <main className={classes.main}>
-        <Navbar />
-        <Feed />
-      </main>
+      <Container maxWidth="lg" role="main" className={classes.main}>
+        <Box>
+          <Navbar />
+          <Feed />
+        </Box>
+      </Container>
     </div>
   );
 }
