@@ -1,5 +1,5 @@
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import Home from "./pages/Home";
+import Home from "./Home";
 
 const theme = createMuiTheme();
 

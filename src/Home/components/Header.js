@@ -16,6 +16,11 @@ const useStyle = makeStyles((theme) => ({
 
   separator: {
     flexGrow: 1
+  },
+
+  spacing: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1)
   }
 
 }));
@@ -30,11 +35,11 @@ function Header() {
       <Toolbar>
         <img src="/images/logo.png" alt="Logotipo do ConectaDev" className={classes.logo} />
         <div className={classes.separator}></div>
-        <Button variant="contained" color="primary">Novo posts</Button>
-        <IconButton title="Notificação">
+        <Button variant="contained" color="primary" className={classes.spacing}>Novo posts</Button>
+        <IconButton title="Notificação" className={classes.spacing}>
           <NotificationsNoneIcon />
         </IconButton>
-        <Avatar src="/images/avatars/default.png" alt="Perfil do sistema" />
+        <Avatar className={classes.spacing} src="/images/avatars/default.png" alt="Perfil do sistema" />
       </Toolbar>
     </AppBar>
   );

@@ -4,7 +4,8 @@ import { makeStyles } from "@material-ui/styles";
 const useStyle = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(2),
-    width: 275
+    width: 230,
+    marginRight: theme.spacing(2)
   },
   buttonRegistrar: {
     width: '100%'
