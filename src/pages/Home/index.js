@@ -2,7 +2,7 @@ import Header from '../../components/Header';
 import { makeStyles } from "@material-ui/styles";
 import Navbar from '../../components/Navbar';
 import Feed from '../../components/Feed';
-import { Box, Container } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
 
 const useStyle = makeStyles((theme) => ({
@@ -14,7 +14,8 @@ const useStyle = makeStyles((theme) => ({
 
   main: {
     marginTop: 64,
-    padding: 24
+    display: 'flex',
+    padding: theme.spacing(3)
   }
 
 }));
@@ -29,10 +30,8 @@ function Home() {
     <div className={classes.root}>
       <Header />
       <Container maxWidth="lg" role="main" className={classes.main}>
-        <Box>
-          <Navbar />
-          <Feed />
-        </Box>
+        <Navbar />
+        <Feed />
       </Container>
     </div>
   );

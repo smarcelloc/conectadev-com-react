@@ -1,10 +1,14 @@
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Home from "./pages/Home";
+
+const theme = createMuiTheme();
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Home />
-    </div>);
+    </ThemeProvider>
+  );
 }
 
 export default App;
