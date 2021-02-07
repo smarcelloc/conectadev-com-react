@@ -1,7 +1,6 @@
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/core";
 import Home from "./pages/Home";
-
-const theme = createMuiTheme();
+import theme from "./theme";
 
 function App() {
   return (
