@@ -1,5 +1,5 @@
-import { makeStyles } from "@material-ui/styles";
-import PostCard from '../../components/PostCard';
+//import { makeStyles } from "@material-ui/styles";
+import PostCard from '../../../../components/PostCard';
 
 const posts = [
   {
@@ -33,17 +33,15 @@ const posts = [
   }
 ];
 
-const useStyle = makeStyles((theme) => ({
-  root: {
-  }
+// const useStyle = makeStyles((theme) => ({
 
-}));
+// }));
 
 function Feed() {
-  const classes = useStyle();
+  //const classes = useStyle();
 
   return (
-    <div className={classes.root}>
+    <div>
       {posts.map(post => (
         <PostCard key={post.id} post={post} />
       ))}

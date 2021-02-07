@@ -91,7 +91,7 @@ function PostCard({ post }) {
                 </Typography>
 
                 <CardActionArea>
-                    <img src={post.image} className={classes.image} />
+                    <img src={post.image} className={classes.image} alt={'image: ' + post.title} />
                 </CardActionArea>
 
             </CardContent>
